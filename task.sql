@@ -41,10 +41,10 @@ CREATE TABLE ProductInventory (
 
 --changeset nikolay.honcharenko:5 labels:0.0.2
 CREATE TABLE Users (
-    ID INT,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
-    Email VARCHAR(50),
+    ID INT AUTO_INCREMENT,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(50) NOT NULL UNIQUE,
     PRIMARY KEY (ID)
 );
 --rollback DROP TABLE Users;
