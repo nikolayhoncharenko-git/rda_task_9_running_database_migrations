@@ -44,7 +44,7 @@ CREATE TABLE Users (
     ID INT AUTO_INCREMENT,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
-    Email VARCHAR(50) NOT NULL UNIQUE,
+    Email VARCHAR(50) NOT NULL,
     PRIMARY KEY (ID)
 );
 --rollback DROP TABLE Users;
